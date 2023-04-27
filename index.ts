@@ -8,14 +8,17 @@ class UserDao {
   constructor(private users: User[]) {}
 
   getUserById(id: number): User | undefined {
-    return this.users.find((user) => user.id === id);
+    const user = this.users.find((user) => user.id === id);
+    if (!user) {
+      throw new Error(`User with id ${id} not found`);
+    }
+    return user;
   }
 
   getUsersByName(name: string): User[] {
     const user = this.users.filter((user) => user.name === name);
     if (user.length === 0) {
-      console.log("There is no user with that name");
-      return [];
+      throw Error("There is no user with that name");
     }
     return user;
   }
