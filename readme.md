@@ -53,7 +53,7 @@ Authentication is the process of verifying the identity of a user or client that
 
 Authorization, on the other hand, is the process of determining what actions a user or client is allowed to perform on a specific resource or set of resources.
 
-<h1>How would you implement token-based authentication in your API?</h1>
+<h1>6: How would you implement token-based authentication in your API?</h1>
 
 First of all I create an authentication endpoint that accepts user credentials
 
