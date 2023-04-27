@@ -60,3 +60,8 @@ First of all I create an authentication endpoint that accepts user credentials
 When a user logs in successfully, generate an access token and return it in the response to the client
 
 I store the access token in a cookie
+
+I define a token validity for each incoming req.
+To check the token is valid or invalid
+
+And a create a middleware to protect routes from unauthorized users
