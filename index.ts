@@ -12,7 +12,12 @@ class UserDao {
   }
 
   getUsersByName(name: string): User[] {
-    return this.users.filter((user) => user.name === name);
+    const user = this.users.filter((user) => user.name === name);
+    if (user.length === 0) {
+      console.log("There is no user with that name");
+      return [];
+    }
+    return user;
   }
 }
 
@@ -29,5 +34,5 @@ const userDao = new UserDao(users);
 const user = userDao.getUserById(2);
 console.log(user);
 
-const usersByName = userDao.getUsersByName("Yusuf");
+const usersByName = userDao.getUsersByName("Ghezzal");
 console.log(usersByName);
