@@ -45,3 +45,10 @@ And the difference on parameters are:GET requests typically include parameters i
 And there are some security and caching differences
 
 <h1>4: What is a Microservice Architecture? </h1>
+A microservice architecture is a way of designing software applications as a collection of small, independent services that work together to provide the overall functionality of the application.
+
+<h1>5: What is the difference between authentication and authorization in API development?</h1>
+
+Authentication is the process of verifying the identity of a user or client that is making a request to an API.
+
+Authorization, on the other hand, is the process of determining what actions a user or client is allowed to perform on a specific resource or set of resources.
