@@ -2,7 +2,7 @@
 
 <h1>1: What is TypeScript?</h1>
 
-Makes it easier for developers to write high-quality and scalable code.
+It's a programming language makes it easier for developers to write high-quality and scalable code.
 
 <h1>2:What are the advantages of using TypeScript?</h1>
 
