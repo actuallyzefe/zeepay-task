@@ -52,3 +52,11 @@ A microservice architecture is a way of designing software applications as a col
 Authentication is the process of verifying the identity of a user or client that is making a request to an API.
 
 Authorization, on the other hand, is the process of determining what actions a user or client is allowed to perform on a specific resource or set of resources.
+
+<h1>How would you implement token-based authentication in your API?</h1>
+
+First of all I create an authentication endpoint that accepts user credentials
+
+When a user logs in successfully, generate an access token and return it in the response to the client
+
+I store the access token in a cookie
